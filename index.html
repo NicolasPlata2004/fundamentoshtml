@@ -3,8 +3,12 @@
 <html>
 <!--------Cabecera-------->
 <head>
-    <!----El meta se usa en el Head para identificar caracteres especiales como "ñ" y "tilde" entre otros, cosas que se encuentran EN EL ESPAÑOL.---->
+    <!----El meta se usa en el Head para identificar caracteres especiales como "ñ" y "tilde" entre otros, cosas que se encuentran 
+        EN EL ESPAÑOL.---->
     <meta charset="UTF-8"/>
+    <!---"Link" se usa para enlazar una hoja de estilo en especifico con "type" se especifica el lenguaje, con "rel" se especifica el
+        formato en este caso una hoja de estilo y con "href" se especifica el documento al cual nos referimos--->
+    <link type="text/css" rel="stylesheet" href="estilo.css"/>
     <!----title sirve para excribir el titulo de la pagina en la ventana---->
     <title>Grupo P76</title>
 </head>
@@ -33,22 +37,108 @@
         A quien le agrade hacer algo.
     </p>
 
-    <p>
+    <hr>
+    <!---Los divs sirven para agrupar varias etiquetas y posteriormente moverlas o modificarlas si es necesario--->
+    <h2>DIVS</h2>
+    <div>
+        Estoy dentro de un div
+        <h4>Esto es untitulo dentro de un div</h4>
+        <p>Esto es un parrafo dentro de un div</p>
+        <label>Esto es un label dentro de un div</label>
+    </div>
+
+    <h2>DIV ejemplo aplicado</h2>
+    <div style=" background-color: rgb(255, 0, 0);">
+        <!---Con el div y el style se puede definir caracteristicas como el color, en este caso añadiendo background-color--->
+        Estoy dentro de un div
+        <h4>Esto es untitulo dentro de un div</h4>
+        <p>Esto es un parrafo dentro de un div</p>
+        <label>Esto es un label dentro de un div</label>
+    </div>
+
+    <hr>
+
+    <p style="color: green;">
+        <!---Se usa solo "style color" en un parrafo para cambiar el color de la letra a diferencia de "background color" que 
+        cambia el fondo--->
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorum sapiente temporibus maiores corrupti
         cumque expedita iure illo doloribus quo. Deserunt ad dolorem commodi officiis et voluptatem voluptas est enim.
     </p>
 
+    <!----el "id" sirve para identificar un parrafo en especifico y en la hoja de estilo en este caso "estilo.css" cambiar el estilo o 
+        formato de la etiqueta en especifico, se usa "#" y luego se especifica el nombre que se le dio al id /en este caso parrafo1/---->
+    <p id="parrafo1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis tempora voluptate nisi tenetur. 
+        Amet molestias, hic quas dicta dolores, ipsum in sit reprehenderit omnis quia explicabo, 
+        corporis consequuntur laborum?
+    </p>
+    <!--Aplicacion de clases, junto con la hoja de estilo, a diferencia de el identificador "id" las clases sirven para agrupara distintas 
+        etiquetas y de esa forma aplicar un formato para distintas en conjunto-->
+
+    <p class="negrilla">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit non id quidem nulla itaque officia enim dolor ipsa distinctio, 
+        quasi ducimus fuga dolorum sunt minus doloribus. Eum, eaque cumque.
+    </p>
+
+    <p class="negrilla">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consectetur magni impedit, minus ex adipisci quia aut aliquam, 
+        ad iste optio blanditiis? Nam eaque unde ipsam adipisci tempora beatae inventore.
+    </p>
+
+    <hr>
+    <!---Clase 5--->
+    
+    <!---Contenedor hijo 1, en este caso el que define la tabla--->
+    
+    <!---Contenedor padre--->
+    <!---lOS DIVS solo son visibles cuando tienen un contenido--->
+    <div id="contPadre">
+        <!---Contenedor hijo 1, recuerde el identado, tiene que haber una jerarquia para que el programa sepa cual es el div padre y 
+            cuales son los hijos--->
+        <div id="contTable">
+            <h2>Info. Personas</h2>
+            <!---Tabla, en este caso "table" se usa solo para generar la estructura pero esta no le da ningun estilo por si sola--->
+            <table>
+                <!---<th> Referencia a la cabecera de la tabla--->
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                </tr>
+                <!---"<tr>" Referencia a la fila ___ --->
+                <tr>
+                    <!---"<td>" Referencia a la columna | --->
+                    <td>Nicolas</td>
+                    <td>Plata</td>
+                    <td>123456789</td>
+                    <td>Random@gamil.com</td>
+                </tr>
+            </table>
+        </div>
+        <!---Contenedor hijo 2, en este se agregara una imagen, recuerde debe estar en el contenedor padre pero NO en el hijo 1--->
+        <!---Con la etiquta img src= "URL" se puede añadir una imagen, para buscar la URL solo debemos inspeccionar el sources--->
+        <div id="contImg">
+            <!---Cargar imagen desde internet con la URL--->
+            <img src="https://imaster.academy/theme/image.php/imaster/theme/1632812341/login/login-background">
+        </div>
+    </div>
+
+    <!---Cargar imagen de manera local, /Se agrega la imagen direcatmente a la carpeta donde se esta rabajando/ se une directamente 
+        con img src y el nombre de la imagen--->
+
+    <div id="Car_loc_img">
+        <img src="Zoro.jpg"/>
+    </div>
 
 </body>
 
 <!-------Pie de pagina-------->
 <footer>
-
+    <!---Span se usa para agrupar, sirve para aplicar con la hoja de estilo un estilo que no involucre todo el parrafo, por ejemplo 
+        puede servir para subrayar o resaltar una palabra de un parrafo--->
+    Hecho en <span class="negrilla">Mision Tic 2022</span>
+    <br>
+    Hecho por <span>Nicolas Plata Molano</span>
 </footer>
-
-
-
-
-
-
 </html>

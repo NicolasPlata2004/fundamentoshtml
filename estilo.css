@@ -1,0 +1,80 @@
+/*Esto es un comentario para CSS no aparece en el producto final*/
+
+/*Con "p{}" se modifican TODOS los parrafos*/
+p{
+    color: blue;
+}
+
+/*Con "#" + identificador se modifica un parrafo en especifico*/
+/*Con "font-family:" se elige el tipo de letra que se desea crear*/
+/*Con "font-weight:" se elige el grosor de la letra*/
+/*Con "font-size:" se elige el tamaño de la letra (se usaba antes por pixeles pero ahora es mejor usar "rem" que se adapta a la panatalla)
+se basa en el tamaño default sea celular o computador*/
+#parrafo1{
+    color: blueviolet;
+    font-family: cursive;
+    font-weight: bold;
+    font-size:1,5rem;
+}
+
+/*Crear una clase con "." una clase sirve para agrupar varios elementos, las clases a diferencia de los identificadores se pueden 
+aplicar a diferentes elementos*/
+.negrilla{
+    color:black;
+    font-family:fantasy;
+    font-style: initial;
+}
+
+/*Contenedor padre, clase 5*/
+
+/*Con width se define el ancho del div, con width:numero%  que porcentaje del div posible que se va a usar, con width:numero + vw se 
+define en base a toda la pantalla HORIZONTAL posible*/
+
+/*Con height se define el alto del div, con height:numero + vh se define en base a toda la pantalla vertical, con % se define en base 
+al tamaño base del div, con "px" se define en base a los pixeles*/
+
+#contPadre{
+    background-color: red;
+    width: 100%;
+    height:30vh;
+}
+/*Con "text-align" se puede mover el texto en esta caso centrarlo con "center"*/
+/*Con "float" se ubica el div*/
+#contTable{
+    background-color: yellow;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+/*Con "border" se crea un borde que ayuda a definir la tabla*/
+/*Con las comas se puede aplicar un estilo a diferentes etiquetas*/
+
+table, tr, td, th {
+    border: 1px solid black;
+}
+
+/*Con el nombre del div podemos definir el tamaño de la tabla con respecto al div padre*/
+table{
+    width: 100%;
+}
+
+/*Se va a agregar una imagen*/
+#contImg{
+    background-color: green;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+/*Con el id de la imagen se puede ajustar el tamaño de esta*/
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Imagen local*/
+#Car_loc_img{
+    width: 100%;
+    height: 50vh;
+}
